@@ -28,5 +28,5 @@ jobs:
           curl -X POST 'https://api.github.com/repos/luka-nisic/Test-2/actions/workflows/47002648/dispatches' \
           -H 'Accept: application/vnd.github.everest-preview+json' \
           -u ${{ secrets.ACTIONS_KEY }} \
-          --data '{"event_type": "Trigger Workflow", "client_payload": { "repository": "'"$GITHUB_REPOSITORY"'" }}'
+          -d '{"ref":"topic-branch","inputs":{"name":"Mona the Octocat","home":"San Francisco, CA"}}'
       - uses: actions/checkout@v3
