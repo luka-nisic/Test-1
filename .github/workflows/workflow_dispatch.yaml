@@ -13,5 +13,5 @@ jobs:
           curl -X POST 'https://api.github.com/repos/luka-nisic/Test-2/actions/workflows/workflow_dispatch.yml/dispatches' \
           -H 'Accept: application/vnd.github.everest-preview+json' \
           -u ${{ secrets.ACTIONS_KEY }} \
-          -d '{"ref":"main"}'
+          -d '{"ref":"test"}'
       - uses: actions/checkout@v3
