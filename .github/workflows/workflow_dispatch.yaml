@@ -10,7 +10,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Test
         run: |
-          curl -X POST 'https://api.github.com/repos/luka-nisic/Test-2/actions/workflows/new_work.yml/dispatches' \
+          curl -X POST 'https://api.github.com/repos/luka-nisic/Test-2/actions/workflows/workflow_dispatch.yml/dispatches' \
           -H 'Accept: application/vnd.github.everest-preview+json' \
           -u ${{ secrets.ACTIONS_KEY }} \
           -d '{"ref":"main"}'
