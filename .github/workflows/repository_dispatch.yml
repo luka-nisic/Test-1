@@ -1,5 +1,5 @@
 
-name: workflow_01
+name: repository_dispatch.yml
 on:
   workflow_dispatch:
      inputs:
